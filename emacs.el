@@ -17,3 +17,4 @@
 (vendor 'magit)
 (vendor 'textmate)
 (textmate-mode)
+(vendor 'whitespace)
