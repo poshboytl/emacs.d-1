@@ -3,6 +3,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+(load "~/.emacs.d/elpa")
 (load "~/.emacs.d/global")
 (load "~/.emacs.d/defuns")
 (load "~/.emacs.d/bindings")
