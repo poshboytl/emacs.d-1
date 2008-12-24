@@ -17,8 +17,9 @@
 
 ;; On your first run, this should pull in all the base packages.
 ;; But you might not be online, so ignore errors.
-(ignore-errors
-  (message "Checking base list of packages...")
-  (elpa-install))
+(if (functionp 'ignore-errors)
+    (ignore-errors
+     (message "Checking base list of packages...")
+     (elpa-install)))
 
 (provide 'elpa)
