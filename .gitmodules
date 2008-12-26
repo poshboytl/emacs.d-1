@@ -7,9 +7,6 @@
 [submodule "fuzzy-find-in-project"]
 	path = emacs.d/vendor/fuzzy-find-in-project
 	url = git://github.com/avvo/fuzzy-find-in-project.git
-[submodule "gist.el"]
-	path = emacs.d/vendor/gist.el
-	url = git://github.com/defunkt/gist.el.git
 [submodule "magit"]
 	path = emacs.d/vendor/magit
 	url = git://github.com/technomancy/magit.git
