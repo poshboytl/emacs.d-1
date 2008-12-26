@@ -1,8 +1,8 @@
-; for loading libraries in from the vendor directory
+                                        ; for loading libraries in from the vendor directory
 (defun vendor (library)
   (let* ((file (symbol-name library))
-	 (normal (concat "~/.emacs.d/vendor/" file))
-	 (suffix (concat normal ".el")))
+         (normal (concat "~/.emacs.d/vendor/" file))
+         (suffix (concat normal ".el")))
     (cond
      ((file-directory-p normal)
       (add-to-list 'load-path normal)
@@ -24,3 +24,9 @@
 (defun indent-buffer ()
   (interactive)
   (indent-region (point-min) (point-max)))
+
+(defun cleanup-buffer ()
+  (interactive)
+  (indent-buffer)
+  (untabify-buffer)
+  (delete-trailing-whitespace))
