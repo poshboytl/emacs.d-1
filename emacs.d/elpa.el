@@ -4,8 +4,9 @@
 (defvar packages (list
 		  'css-mode
 		  'ruby-mode
-		  'inf-mode
-		  'js2-mode)
+		  'inf-ruby
+		  'js2-mode
+		  'nxml-mode)
   "Libraries that should be installed by default.")
 
 (defun elpa-install ()
