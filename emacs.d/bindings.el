@@ -1,8 +1,11 @@
 ; general
 (global-set-key "\C-xg" 'magit-status)
 
-; open fuzzy match with command-T
-(global-set-key (kbd "s-t") 'fuzzy-find-in-project)
+; fuzzy matching
+(global-set-key "\C-t" 'fuzzy-find-in-project)
+(add-hook 'fuzzy-find-in-project-setup-hook
+	  '(lambda ()
+	     (fuzzy-find-project-root (textmate-project-root))))
 
 ; switch buffers like tabs in most OS X apps
 (global-set-key (kbd "s-{") 'previous-buffer)
