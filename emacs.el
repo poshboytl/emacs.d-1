@@ -10,6 +10,7 @@
 (load "~/.emacs.d/modes")
 (load "~/.emacs.d/theme")
 (load "~/.emacs.d/shell")
+(load "~/.emacs.d/snippets")
 
 (vendor 'cheat)
 (vendor 'far-search)
