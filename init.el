@@ -8,6 +8,8 @@
 (setq vendor-dir (concat dotfiles-dir "vendor"))
 (add-to-list 'load-path vendor-dir)
 
+(require 'cl)
+
 (require 'elpa)
 (require 'global)
 (require 'defuns)
