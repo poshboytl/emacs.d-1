@@ -37,3 +37,5 @@
 (if (equal (system-hostname) "Joshs-MacBook-Air.local\n")
     (setq system-macbook-air 't)
   (setq system-macbook-air nil))
+
+(provide 'global)

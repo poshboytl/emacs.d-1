@@ -16,3 +16,5 @@
 
 (if system-macbook-air
   (setq default-frame-alist '((font . "-apple-Bitstream_Vera_Sans_Mono-medium-normal-normal-Roman-12-*-*-*-*-*-fontset-auto7"))))
+
+(provide 'theme)

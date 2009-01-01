@@ -1,4 +1,4 @@
-                                        ; for loading libraries in from the vendor directory
+; for loading libraries in from the vendor directory
 (defun vendor (library)
   (let* ((file (symbol-name library))
          (normal (concat "~/.emacs.d/vendor/" file))
@@ -30,3 +30,5 @@
   (indent-buffer)
   (untabify-buffer)
   (delete-trailing-whitespace))
+
+(provide 'defuns)

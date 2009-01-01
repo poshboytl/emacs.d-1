@@ -22,3 +22,5 @@
 
 ; don't minimize
 (global-unset-key "\C-z")
+
+(provide 'bindings)
