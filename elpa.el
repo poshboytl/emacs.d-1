@@ -1,4 +1,4 @@
-(load "~/.emacs.d/elpa/package")
+(require 'package)
 (package-initialize)
 
 (defvar packages (list
