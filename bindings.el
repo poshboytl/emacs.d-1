@@ -8,8 +8,8 @@
 	     (fuzzy-find-project-root (textmate-project-root))))
 
 ; switch buffers like tabs in most OS X apps
-(global-set-key (kbd "s-{") 'previous-buffer)
-(global-set-key (kbd "s-}") 'next-buffer)
+(global-set-key "\M-{" 'previous-buffer)
+(global-set-key "\M-}" 'next-buffer)
 
 ; unbind upcase
 (global-unset-key "\C-x\C-u")
