@@ -5,7 +5,7 @@
 (setq color-theme-is-global t)
 
 (if window-system
-    (color-theme-gtk-ide)
+    (color-theme-all-hallows-eve)
   (color-theme-dark-laptop))
 
 (setq mac-allow-anti-aliasing nil)
