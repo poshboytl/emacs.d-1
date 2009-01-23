@@ -2,6 +2,6 @@
 # --
 class ${1:Name} {
 public:
-    $1($2);
-    virtual ~$1();
+	$1($2);
+	virtual ~$1();
 };
