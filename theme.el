@@ -1,10 +1,8 @@
-(load "~/.emacs.d/themes/all_hallows_eve")
-
 (require 'color-theme)
 (setq color-theme-is-global t)
 
 (if window-system
-    (color-theme-all-hallows-eve)
+    (color-theme-gtk-ide)
   (color-theme-dark-laptop))
 
 (setq mac-allow-anti-aliasing nil)
