@@ -1,5 +1,4 @@
 (load "~/.emacs.d/themes/all_hallows_eve")
-(load "~/.emacs.d/themes/railscasts")
 
 (require 'color-theme)
 (setq color-theme-is-global t)
