@@ -1,8 +1,10 @@
 (require 'color-theme)
 (setq color-theme-is-global t)
 
+(load "~/.emacs.d/themes/color-theme-all-hallows-eve")
+
 (if window-system
-    (color-theme-gtk-ide)
+    (color-theme-all-hallows-eve)
   (color-theme-dark-laptop))
 
 (setq mac-allow-anti-aliasing nil)
@@ -17,6 +19,6 @@
     (setq default-frame-alist '((font . "-apple-Bitstream_Vera_Sans_Mono-medium-normal-normal-Roman-18-*-*-*-*-*-fontset-auto7"))))
 
 (if system-macbook-air
-  (setq default-frame-alist '((font . "-apple-Bitstream_Vera_Sans_Mono-medium-normal-normal-Roman-12-*-*-*-*-*-fontset-auto7"))))
+  (setq default-frame-alist '((font . "-apple-Bitstream_Vera_Sans_Mono-medium-normal-normal-Roman-14-*-*-*-*-*-fontset-auto7"))))
 
 (provide 'theme)
