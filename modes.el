@@ -70,7 +70,7 @@
 
 (font-lock-add-keywords
       'ruby-mode
-      '(("\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)" 1 font-lock-keyword-face)))
+      '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
 
 (vendor 'rinari)
 
