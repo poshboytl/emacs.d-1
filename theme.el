@@ -3,7 +3,7 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 
-(load "~/.emacs.d/themes/color-theme-all-hallows-eve")
+(load "~/.emacs.d/vendor/color-theme-all-hallows-eve/color-theme-all-hallows-eve")
 
 (if window-system
     (color-theme-all-hallows-eve)

@@ -1,6 +1,9 @@
 [submodule "cheat.el"]
 	path = vendor/cheat.el
 	url = git://github.com/defunkt/cheat.el.git
+[submodule "color-theme-all-hallows-eve"]
+	path = vendor/color-theme-all-hallows-eve
+	url = git://github.com/josh/color-theme-all-hallows-eve.git
 [submodule "far-search"]
 	path = vendor/far-search
 	url = git://github.com/aemoncannon/far-search-mode.git
