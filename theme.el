@@ -3,11 +3,7 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 
-(load "~/.emacs.d/vendor/color-theme-all-hallows-eve/color-theme-all-hallows-eve")
-
-(if window-system
-    (color-theme-all-hallows-eve)
-  (color-theme-dark-laptop))
+(color-theme-dark-laptop)
 
 (setq mac-allow-anti-aliasing nil)
 
