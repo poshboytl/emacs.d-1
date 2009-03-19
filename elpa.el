@@ -5,6 +5,7 @@
 		  'css-mode
 		  'inf-ruby
 		  'js2-mode
+		  'magit
 		  'nxml-mode
 		  'ruby-mode)
   "Libraries that should be installed by default.")

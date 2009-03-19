@@ -24,8 +24,6 @@
 (vendor 'cheat)
 (vendor 'far-search)
 (vendor 'fuzzy-find-in-project)
-(vendor 'gist)
-(vendor 'magit)
 (vendor 'textmate)
 (textmate-mode)
 (vendor 'whitespace)

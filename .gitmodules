@@ -7,9 +7,6 @@
 [submodule "fuzzy-find-in-project"]
 	path = vendor/fuzzy-find-in-project
 	url = git://github.com/avvo/fuzzy-find-in-project.git
-[submodule "magit"]
-	path = vendor/magit
-	url = git://github.com/technomancy/magit.git
 [submodule "rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
