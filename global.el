@@ -25,13 +25,4 @@
 ; set encoding
 (prefer-coding-system 'utf-8)
 
-; set computer
-(if (equal system-name "Joshs-MacBook-Pro.local")
-    (setq system-macbook-pro 't)
-  (setq system-macbook-pro nil))
-
-(if (equal system-name "Joshs-MacBook-Air.local")
-    (setq system-macbook-air 't)
-  (setq system-macbook-air nil))
-
 (provide 'global)
