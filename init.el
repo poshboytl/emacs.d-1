@@ -22,7 +22,6 @@
 (require 'snippets)
 
 (vendor 'cheat)
-(vendor 'far-search)
 (vendor 'fuzzy-find-in-project)
 (vendor 'textmate)
 (textmate-mode)
