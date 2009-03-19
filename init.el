@@ -9,10 +9,6 @@
 (add-to-list 'load-path vendor-dir)
 
 (require 'cl)
-
-; ready, set, go!
-(defvar *emacs-load-start* (current-time))
-
 (require 'elpa)
 (require 'global)
 (require 'defuns)
@@ -28,14 +24,5 @@
 (vendor 'whitespace)
 
 (load custom-file 'noerror)
-
-; finish!
-(message "Loaded in %ds"
-	 (destructuring-bind
-	     (hi lo ms)
-	     (current-time)
-	   (- (+ hi lo)
-	      (+ (first *emacs-load-start*)
-		 (second *emacs-load-start*)))))
 
 (provide 'init)
