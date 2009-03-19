@@ -17,7 +17,6 @@
 (require 'theme)
 (require 'snippets)
 
-(vendor 'cheat)
 (vendor 'fuzzy-find-in-project)
 (vendor 'textmate)
 (textmate-mode)
