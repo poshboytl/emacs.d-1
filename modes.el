@@ -34,14 +34,6 @@
 ; prefer dired over dumping dir list to buffer
 (global-set-key "\C-x\C-d" 'dired)
 
-; ERC
-(setq erc-server "irc.freenode.net"
-      erc-port 6667
-      erc-nick "joshpeek"
-      erc-user-full-name user-full-name
-      erc-email-userid "joshpeek"
-      erc-prompt-for-password nil)
-
 ; erlang
 (setq load-path (cons "/usr/local/lib/erlang/lib/tools-2.6.2/emacs" load-path))
 (setq erlang-root-dir "/usr/local/lib/erlang")

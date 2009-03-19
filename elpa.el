@@ -3,7 +3,6 @@
 
 (defvar packages (list
 		  'css-mode
-		  'erc
 		  'gist
 		  'inf-ruby
 		  'js2-mode
