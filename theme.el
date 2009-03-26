@@ -5,7 +5,7 @@
 
 (color-theme-dark-laptop)
 
-(setq mac-allow-anti-aliasing nil)
+(setq mac-allow-anti-aliasing t)
 
 ; window
 (setq initial-frame-alist
