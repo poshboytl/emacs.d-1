@@ -22,7 +22,6 @@
 (vendor 'fuzzy-find-in-project)
 (vendor 'textmate)
 (textmate-mode)
-(vendor 'whitespace)
 
 (load custom-file 'noerror)
 
