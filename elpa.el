@@ -8,8 +8,7 @@
 		  'magit
 		  'nxml-mode
 		  'rinari
-		  'ruby-mode
-		  'yasnippet-bundle)
+		  'ruby-mode)
   "Libraries that should be installed by default.")
 
 (defun elpa-install ()

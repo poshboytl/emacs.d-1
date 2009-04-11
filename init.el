@@ -16,9 +16,6 @@
 (require 'modes)
 (require 'theme)
 
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/snippets/")
-
 (vendor 'fuzzy-find-in-project)
 (vendor 'textmate)
 (textmate-mode)
