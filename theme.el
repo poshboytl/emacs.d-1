@@ -16,6 +16,7 @@
 	(width . 237) (height . 65)))
 
 ; font
-(setq default-frame-alist '((font . "-apple-Monaco-medium-normal-normal--18-*-*-*-*-*-fontset-auto1")))
+(setq default-frame-alist
+      '((font . "-apple-inconsolata-medium-r-normal--14-0-72-72-m-0-iso10646-1")))
 
 (provide 'theme)
