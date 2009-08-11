@@ -3,10 +3,11 @@
 (color-theme-initialize)
 (setq color-theme-is-global t)
 
-; (color-theme-dark-laptop)
-
 (load "~/.emacs.d/vendor/color-theme-ir-black")
-(color-theme-ir-black)
+
+(if window-system
+    (color-theme-ir-black)
+  (color-theme-standard))
 
 (setq mac-allow-anti-aliasing t)
 
