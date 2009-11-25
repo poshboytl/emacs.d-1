@@ -7,7 +7,7 @@
 
 (if window-system
     (color-theme-ir-black)
-  (color-theme-standard))
+  nil)
 
 (setq mac-allow-anti-aliasing t)
 
