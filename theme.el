@@ -6,7 +6,7 @@
 (load "~/.emacs.d/vendor/color-theme-ir-black")
 
 (if window-system
-    (color-theme-ir-black)
+    (color-theme-gtk-ide)
   nil)
 
 (setq mac-allow-anti-aliasing t)
