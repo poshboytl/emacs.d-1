@@ -56,6 +56,9 @@
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
+; Ignore Rubinius bytecode
+(add-to-list 'completion-ignored-extensions ".rbc")
+
 (font-lock-add-keywords
       'ruby-mode
       '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
