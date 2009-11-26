@@ -50,6 +50,10 @@
 	     (setq js2-use-font-lock-faces t)))
 
 ; Ruby
+(eval-after-load 'ruby-mode
+  '(progn
+     (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)))
+
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
