@@ -1,9 +1,6 @@
-(setq load-path (cons "~/.emacs.d/vendor/color-theme-6.6.0" load-path))
 (require 'color-theme)
 (color-theme-initialize)
 (setq color-theme-is-global t)
-
-(load "~/.emacs.d/vendor/color-theme-ir-black")
 
 (if window-system
     (color-theme-gtk-ide)

@@ -1,5 +1,8 @@
 ;; MIT License Copyright (c) 2009 Burke Libbey <burke@burkelibbey.org>
 
+(eval-when-compile
+  (require 'color-theme))
+
 (defun color-theme-ir-black ()
   (interactive)
 
@@ -26,7 +29,7 @@
                         ,@(if italic    '(:italic     t))
                         ,@(if underline '(:underline  t))))))
            (face (face &rest args)
-                 `(,(intern (concat "font-lock-" face "-face")) 
+                 `(,(intern (concat "font-lock-" face "-face"))
                    ,(apply #'color args))))
 
       (color-theme-install
