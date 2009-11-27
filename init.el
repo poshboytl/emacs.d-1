@@ -20,7 +20,6 @@
 (require 'modes)
 (require 'theme)
 
-(vendor 'fuzzy-find-in-project)
 (vendor 'textmate)
 (textmate-mode)
 
