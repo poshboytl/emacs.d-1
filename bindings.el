@@ -1,6 +1,9 @@
 ; general
 (global-set-key "\C-xg" 'magit-status)
 
+; completion
+(global-set-key (kbd "M-ESC") 'hippie-expand)
+
 ; fuzzy matching
 (global-set-key "\C-t" 'fuzzy-find-in-project)
 (add-hook 'fuzzy-find-in-project-setup-hook
