@@ -1,20 +1,17 @@
-(require 'color-theme)
-(color-theme-initialize)
-(setq color-theme-is-global t)
+(defun os-x-theme ()
+  (require 'color-theme-gtk-ide)
+  (color-theme-gtk-ide)
 
-(if window-system
-    (color-theme-gtk-ide)
-  nil)
+  ; window
+  (setq initial-frame-alist
+	'((left . 0) (top . 0)
+	  (width . 237) (height . 65)))
 
-(setq mac-allow-anti-aliasing t)
+  ; font
+  (setq mac-allow-anti-aliasing t)
+  (setq default-frame-alist
+	'((font . "-apple-Menlo-medium-r-normal-*-13-*-*-*-m-0-iso10646-1"))))
 
-; window
-(setq initial-frame-alist
-      '((left . 0) (top . 0)
-	(width . 237) (height . 65)))
-
-; font
-(setq default-frame-alist
-      '((font . "-apple-Menlo-medium-r-normal-*-13-*-*-*-m-0-iso10646-1")))
+(if window-system (os-x-theme) nil)
 
 (provide 'theme)

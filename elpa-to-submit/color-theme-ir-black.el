@@ -3,6 +3,7 @@
 (eval-when-compile
   (require 'color-theme))
 
+;;;###autoload
 (defun color-theme-ir-black ()
   (interactive)
 
@@ -70,3 +71,5 @@
          (bold ((t (:bold t))))
          (bold-italic ((t (:bold t))))
          (underline ((nil (:underline nil)))))))))
+
+(provide 'color-theme-ir-black)
