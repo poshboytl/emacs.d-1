@@ -9,8 +9,6 @@
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (setq custom-file (concat dotfiles-dir "custom.el"))
-(setq vendor-dir (concat dotfiles-dir "vendor"))
-(add-to-list 'load-path vendor-dir)
 
 (require 'cl)
 (require 'elpa)
