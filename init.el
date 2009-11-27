@@ -20,9 +20,6 @@
 (require 'modes)
 (require 'theme)
 
-(vendor 'textmate)
-(textmate-mode)
-
 (regen-autoloads)
 (load custom-file 'noerror)
 
