@@ -13,6 +13,7 @@
 (defun elpa-install ()
   "Install all starter-kit packages that aren't installed."
   (interactive)
+  (package-refresh-contents)
   (dolist (package packages)
     (unless (or (member package package-activated-list)
 		(functionp package))
