@@ -13,7 +13,6 @@
 
 (add-hook 'css-mode-hook
 	  '(lambda ()
-	     (setq tab-width 2)
 	     (setq css-indent-offset 2)
 	     (add-hook 'before-save-hook 'untabify-buffer)))
 

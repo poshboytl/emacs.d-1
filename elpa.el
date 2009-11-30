@@ -2,7 +2,6 @@
 (package-initialize)
 
 (defvar packages (list
-		  'css-mode
 		  'inf-ruby
 		  'js2-mode
 		  'magit
