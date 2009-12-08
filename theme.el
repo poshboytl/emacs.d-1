@@ -1,3 +1,9 @@
+(defun term-theme ()
+  ; disable menu bar
+  (menu-bar-mode -1)
+)
+
+
 (defun os-x-theme ()
   (require 'color-theme)
   (require 'color-theme-gtk-ide)
@@ -13,6 +19,7 @@
   (setq default-frame-alist
 	'((font . "-apple-Menlo-medium-r-normal-*-13-*-*-*-m-0-iso10646-1"))))
 
-(if window-system (os-x-theme) nil)
+(if window-system (os-x-theme)
+  (term-theme))
 
 (provide 'theme)
