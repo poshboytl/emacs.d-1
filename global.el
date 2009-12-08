@@ -25,4 +25,7 @@
 ; set encoding
 (prefer-coding-system 'utf-8)
 
+; move files to the trash instead of rm
+(setq delete-by-moving-to-trash t)
+
 (provide 'global)
