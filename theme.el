@@ -3,7 +3,6 @@
   (menu-bar-mode -1)
 )
 
-
 (defun os-x-theme ()
   (require 'color-theme)
   (require 'color-theme-gtk-ide)
@@ -17,7 +16,7 @@
   ; font
   (setq mac-allow-anti-aliasing t)
   (setq default-frame-alist
-	'((font . "-apple-Menlo-medium-r-normal-*-13-*-*-*-m-0-iso10646-1"))))
+	'((font . "-apple-DejaVu_Sans_Mono-medium-normal-normal-*-14-*-*-*-m-0-iso10646-"))))
 
 (if window-system (os-x-theme)
   (term-theme))
