@@ -5,8 +5,8 @@
 
 (defun os-x-theme ()
   (require 'color-theme)
-  (require 'color-theme-gtk-ide)
-  (color-theme-gtk-ide)
+  (require 'color-theme-twilight)
+  (color-theme-twilight)
 
   ; window
   (setq initial-frame-alist
