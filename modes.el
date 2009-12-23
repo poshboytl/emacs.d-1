@@ -45,7 +45,12 @@
 
 (add-hook 'js2-mode-hook
 	  '(lambda ()
-	     (setq js2-basic-offset 2)
+	     (require 'espresso)
+	     (setq espresso-indent-level 2)
+	     (set (make-local-variable 'indent-line-function)
+		  'espresso-indent-line)
+	     (define-key js2-mode-map (kbd "RET") 'newline-and-indent)
+	     (add-hook 'before-save-hook 'delete-trailing-whitespace)
 	     (setq js2-use-font-lock-faces t)))
 
 ; Ruby
