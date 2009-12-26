@@ -28,6 +28,9 @@
 ; prefer dired over dumping dir list to buffer
 (global-set-key "\C-x\C-d" 'dired)
 
+; M-x without meta
+(global-set-key (kbd "C-x C-m") 'execute-extended-command)
+
 ; unbind upcase
 (global-unset-key "\C-x\C-u")
 
