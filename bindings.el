@@ -1,4 +1,4 @@
-; general
+; magit
 (global-set-key "\C-xg" 'magit-status)
 
 ; completion
@@ -10,9 +10,17 @@
 	  '(lambda ()
 	     (fuzzy-find-project-root (textmate-project-root))))
 
-; switch buffers like tabs in most OS X apps
-(global-set-key "\M-{" 'previous-buffer)
-(global-set-key "\M-}" 'next-buffer)
+; buffer switching
+(global-set-key (kbd "s-{") 'previous-buffer)
+(global-set-key (kbd "s-}") 'next-buffer)
+(global-set-key (kbd "M-s-<left>") 'previous-buffer)
+(global-set-key (kbd "M-s-<right>") 'next-buffer)
+
+; close window
+(global-set-key (kbd "s-w") 'close-buffer)
+
+; window switching
+(global-set-key (kbd "s-`") 'other-window)
 
 ; unbind upcase
 (global-unset-key "\C-x\C-u")

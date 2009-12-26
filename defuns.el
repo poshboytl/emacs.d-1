@@ -18,6 +18,10 @@
         (update-directory-autoloads autoload-dir))))
   (load autoload-file))
 
+(defun close-buffer ()
+  (interactive)
+  (kill-buffer (current-buffer)))
+
 (defun tabify-buffer ()
   (interactive)
   (tabify (point-min) (point-max)))
