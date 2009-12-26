@@ -58,8 +58,6 @@
       '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
 
 ; shell
-(global-set-key "\C-x\C-z" 'shell)
-
 (eval-after-load 'shell
   '(progn
      (define-key shell-mode-map [up] 'comint-previous-input)

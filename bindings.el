@@ -1,6 +1,9 @@
 ; magit
 (global-set-key "\C-xg" 'magit-status)
 
+; start a new shell
+(global-set-key (kbd "C-x C-z") 'shell)
+
 ; completion
 (global-set-key (kbd "M-ESC") 'hippie-expand)
 
