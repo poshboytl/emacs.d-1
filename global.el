@@ -4,6 +4,9 @@
 ; show column number
 (column-number-mode 1)
 
+; disable backup files (.saves)
+(setq auto-save-list-file-name nil)
+
 ; disable auto-save files (#foo#)
 (setq auto-save-default nil)
 
