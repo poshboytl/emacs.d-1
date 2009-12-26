@@ -10,6 +10,7 @@
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (setq custom-file (concat dotfiles-dir "custom.el"))
 
+(require 'cl)
 (require 'elpa)
 (require 'global)
 (require 'defuns)
