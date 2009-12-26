@@ -25,6 +25,9 @@
 ; window switching
 (global-set-key (kbd "s-`") 'other-window)
 
+; prefer dired over dumping dir list to buffer
+(global-set-key "\C-x\C-d" 'dired)
+
 ; unbind upcase
 (global-unset-key "\C-x\C-u")
 

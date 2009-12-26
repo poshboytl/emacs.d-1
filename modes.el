@@ -19,20 +19,6 @@
 ; Diff
 (setq auto-mode-alist (cons '("COMMIT_EDITMSG$" . diff-mode) auto-mode-alist))
 
-; Dired
-(require 'dired)
-
-; remap 'o' in dired mode to open a file
-(defun dired-open-mac ()
-  (interactive)
-  (let ((file-name (dired-get-file-for-visit)))
-    (if (file-exists-p file-name)
-        (call-process "/usr/bin/open" nil 0 nil file-name))))
-(define-key dired-mode-map "o" 'dired-open-mac)
-
-; prefer dired over dumping dir list to buffer
-(global-set-key "\C-x\C-d" 'dired)
-
 ; HTML
 (add-hook 'html-mode-hook
 	  '(lambda()
