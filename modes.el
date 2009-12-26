@@ -17,7 +17,7 @@
 	     (add-hook 'before-save-hook 'untabify-buffer)))
 
 ; Diff
-(setq auto-mode-alist (cons '("COMMIT_EDITMSG$" . diff-mode) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
 ; HTML
 (add-hook 'html-mode-hook
