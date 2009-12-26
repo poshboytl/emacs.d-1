@@ -10,6 +10,9 @@
 	  '(lambda ()
 	     (fuzzy-find-project-root (textmate-project-root))))
 
+; open file
+(global-set-key (kbd "s-o") 'find-file)
+
 ; buffer switching
 (global-set-key (kbd "s-{") 'previous-buffer)
 (global-set-key (kbd "s-}") 'next-buffer)
