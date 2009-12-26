@@ -2,6 +2,7 @@
 (package-initialize)
 
 (defvar packages (list
+		  'full-ack
 		  'inf-ruby
 		  'js2-mode
 		  'magit
