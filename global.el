@@ -22,6 +22,9 @@
 ; move files to the trash instead of rm
 (setq delete-by-moving-to-trash t)
 
+; use clipboard
+(setq x-select-enable-clipboard t)
+
 ; store backup and autosave files in tmp
 (defvar user-temporary-file-directory
   (concat temporary-file-directory user-login-name "/"))
