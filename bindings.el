@@ -1,3 +1,6 @@
+; readline kill backward
+(global-set-key (kbd "C-M-h") 'backward-kill-word)
+
 ; magit
 (global-set-key "\C-xg" 'magit-status)
 
