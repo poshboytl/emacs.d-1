@@ -4,15 +4,6 @@
 ; show column number
 (column-number-mode 1)
 
-; disable backup files (.saves)
-(setq auto-save-list-file-name nil)
-
-; disable auto-save files (#foo#)
-(setq auto-save-default nil)
-
-; disable backup files (foo~)
-(setq backup-inhibited t)
-
 ; no bell
 (setq ring-bell-function 'ignore)
 
@@ -30,5 +21,18 @@
 
 ; move files to the trash instead of rm
 (setq delete-by-moving-to-trash t)
+
+; store backup and autosave files in tmp
+(defvar user-temporary-file-directory
+  (concat temporary-file-directory user-login-name "/"))
+(make-directory user-temporary-file-directory t)
+(setq backup-by-copying t)
+(setq backup-directory-alist
+      `(("." . ,user-temporary-file-directory)
+        (,tramp-file-name-regexp nil)))
+(setq auto-save-list-file-prefix
+      (concat user-temporary-file-directory ".auto-saves-"))
+(setq auto-save-file-name-transforms
+      `((".*" ,user-temporary-file-directory t)))
 
 (provide 'global)
