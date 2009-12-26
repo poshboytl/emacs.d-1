@@ -15,8 +15,8 @@
 
   ; font
   (setq mac-allow-anti-aliasing t)
-  (setq default-frame-alist
-	'((font . "-apple-DejaVu_Sans_Mono-medium-normal-normal-*-12-*-*-*-m-0-iso10646-"))))
+  (set-face-font 'default
+		 "-apple-DejaVu_Sans_Mono-medium-normal-normal-*-12-*-*-*-m-0-iso10646-"))
 
 (if window-system (os-x-theme)
   (term-theme))
