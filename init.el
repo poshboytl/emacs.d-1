@@ -19,4 +19,8 @@
 (regen-autoloads)
 (load custom-file 'noerror)
 
+; system specific config
+(setq system-specific-config (concat dotfiles-dir system-name ".el"))
+(if (file-exists-p system-specific-config) (load system-specific-config))
+
 (provide 'init)
