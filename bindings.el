@@ -1,6 +1,9 @@
 ; readline kill backward
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
+; buffer menu
+(global-set-key (kbd "C-x C-b") 'buffer-menu)
+
 ; magit
 (global-set-key "\C-xg" 'magit-status)
 
