@@ -5,6 +5,7 @@
 		  'inf-ruby
 		  'js2-mode
 		  'magit
+		  'nav
 		  'nxml-mode
 		  'rinari
 		  'ruby-mode)
