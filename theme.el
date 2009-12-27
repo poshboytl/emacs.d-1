@@ -9,9 +9,9 @@
   (color-theme-twilight)
 
   ; window
-  (setq initial-frame-alist
+  (setq default-frame-alist
 	'((left . 0) (top . 0)
-	  (width . 237) (height . 65)))
+	  (width . 80) (height . 40)))
 
   ; font
   (setq mac-allow-anti-aliasing t)
