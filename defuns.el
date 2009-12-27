@@ -18,6 +18,20 @@
         (update-directory-autoloads autoload-dir))))
   (load autoload-file))
 
+(defun restore-frame ()
+  (interactive)
+  (set-frame-size (selected-frame)
+		  (cdr (assoc 'width initial-frame-alist))
+		  (cdr (assoc 'height initial-frame-alist)))
+  (set-frame-position (selected-frame)
+		      (cdr (assoc 'left initial-frame-alist))
+		      (cdr (assoc 'top initial-frame-alist))))
+
+(defun maximize-frame ()
+  (interactive)
+  (set-frame-size (selected-frame) 1000 1000)
+  (set-frame-position (selected-frame) 0 0))
+
 (defun close-buffer ()
   (interactive)
   (kill-buffer (current-buffer)))
