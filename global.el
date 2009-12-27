@@ -1,6 +1,16 @@
 ; no splash screen
 (setq inhibit-startup-screen t)
 
+; disable auto-save files (#foo#)
+(setq auto-save-default nil)
+
+; disable backup files (foo~)
+(setq backup-inhibited t)
+
+; disable auto-save-list/.saves
+(setq auto-save-list-file-prefix nil)
+;(setq auto-save-list-file-name nil)
+
 ; show column number
 (column-number-mode 1)
 
@@ -24,18 +34,5 @@
 
 ; use clipboard
 (setq x-select-enable-clipboard t)
-
-; store backup and autosave files in tmp
-(defvar user-temporary-file-directory
-  (concat temporary-file-directory user-login-name "/"))
-(make-directory user-temporary-file-directory t)
-(setq backup-by-copying t)
-(setq backup-directory-alist
-      `(("." . ,user-temporary-file-directory)
-        (,tramp-file-name-regexp nil)))
-(setq auto-save-list-file-prefix
-      (concat user-temporary-file-directory ".auto-saves-"))
-(setq auto-save-file-name-transforms
-      `((".*" ,user-temporary-file-directory t)))
 
 (provide 'global)
