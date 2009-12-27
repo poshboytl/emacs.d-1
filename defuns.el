@@ -29,7 +29,9 @@
 
 (defun maximize-frame ()
   (interactive)
-  (set-frame-size (selected-frame) 1000 1000)
+  (set-frame-size (selected-frame)
+		  (display-pixel-width)
+		  (display-pixel-height))
   (set-frame-position (selected-frame) 0 0))
 
 (defun close-buffer ()
