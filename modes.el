@@ -1,4 +1,4 @@
-; ido
+;; ido
 (ido-mode t)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
@@ -6,7 +6,7 @@
       ido-use-filename-at-point t
       ido-max-prospects 10)
 
-; C
+;; C
 (add-hook 'c-mode-hook
           '(lambda ()
              (c-set-style "k&r")
@@ -15,39 +15,39 @@
              (setq indent-tabs-mode t)
              (add-hook 'before-save-hook 'tabify-buffer)))
 
-; CSS
+;; CSS
 (autoload 'css-mode "css-mode" "Mode for editing CSS file" t)
 (add-to-list 'auto-mode-alist '("\\.css$" . css-mode))
 
 (add-hook 'css-mode-hook
-	  '(lambda ()
-	     (setq css-indent-offset 2)
-	     (add-hook 'before-save-hook 'untabify-buffer)))
+          '(lambda ()
+             (setq css-indent-offset 2)
+             (add-hook 'before-save-hook 'untabify-buffer)))
 
-; Diff
+;; Diff
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
-; HTML
+;; HTML
 (add-hook 'html-mode-hook
-	  '(lambda()
-	     (setq tab-width 2)
-	     (add-hook 'before-save-hook 'untabify-buffer)))
+          '(lambda()
+             (setq tab-width 2)
+             (add-hook 'before-save-hook 'untabify-buffer)))
 
-; js2
+;; js2
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (add-hook 'js2-mode-hook
-	  '(lambda ()
-	     (require 'espresso)
-	     (setq espresso-indent-level 2)
-	     (set (make-local-variable 'indent-line-function)
-		  'espresso-indent-line)
-	     (define-key js2-mode-map (kbd "RET") 'newline-and-indent)
-	     (add-hook 'before-save-hook 'delete-trailing-whitespace)
-	     (setq js2-use-font-lock-faces t)))
+          '(lambda ()
+             (require 'espresso)
+             (setq espresso-indent-level 2)
+             (set (make-local-variable 'indent-line-function)
+                  'espresso-indent-line)
+             (define-key js2-mode-map (kbd "RET") 'newline-and-indent)
+             (add-hook 'before-save-hook 'delete-trailing-whitespace)
+             (setq js2-use-font-lock-faces t)))
 
-; Ruby
+;; Ruby
 (eval-after-load 'ruby-mode
   '(progn
      (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)))
@@ -58,14 +58,14 @@
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
-; Ignore Rubinius bytecode
+;; Ignore Rubinius bytecode
 (add-to-list 'completion-ignored-extensions ".rbc")
 
 (font-lock-add-keywords
-      'ruby-mode
-      '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
+ 'ruby-mode
+ '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
 
-; shell
+;; shell
 (eval-after-load 'shell
   '(progn
      (define-key shell-mode-map [up] 'comint-previous-input)
