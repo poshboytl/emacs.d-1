@@ -40,9 +40,6 @@
 ; M-x without meta
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
 
-; unbind upcase
-(global-unset-key "\C-x\C-u")
-
 ; no printing!
 (global-unset-key (kbd "s-p"))
 
