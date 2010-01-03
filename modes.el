@@ -26,6 +26,8 @@
 
 ;; Diff
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
+(setq-default fill-column 72)
+(add-hook 'diff-mode-hook 'turn-on-auto-fill)
 
 ;; HTML
 (add-hook 'html-mode-hook
