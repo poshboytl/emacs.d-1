@@ -21,6 +21,8 @@
 (setq-default fill-column 72)
 (add-hook 'diff-mode-hook 'turn-on-auto-fill)
 
+(add-hook 'diff-mode-hook '(lambda () (flyspell-mode 1)))
+
 ;; HTML
 (add-hook 'html-mode-hook
           '(lambda()
@@ -66,5 +68,8 @@
      (define-key shell-mode-map [down] 'comint-next-input)
      (define-key shell-mode-map "\C-p" 'comint-previous-input)
      (define-key shell-mode-map "\C-n" 'comint-next-input)))
+
+;; text
+(add-hook 'text-mode-hook '(lambda () (flyspell-mode 1)))
 
 (provide 'modes)
