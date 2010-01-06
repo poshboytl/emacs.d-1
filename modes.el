@@ -43,9 +43,30 @@
              (add-hook 'before-save-hook 'delete-trailing-whitespace)
              (setq js2-use-font-lock-faces t)))
 
+;; nxhtml
+(load (concat dotfiles-dir "elpa-to-submit/nxhtml/autostart.el"))
+
+(setq
+      nxhtml-global-minor-mode t
+      mumamo-chunk-coloring 'submode-colored
+      nxhtml-skip-welcome t
+      indent-region-mode t
+      rng-nxml-auto-validate-flag nil
+      nxml-degraded t)
+
+;; erb
+(add-to-list 'auto-mode-alist '("\\.rhtml'" . eruby-nxhtml-mumamo-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo-mode))
+
+(custom-set-faces
+ '(mumamo-background-chunk-major
+   ((((class color) (min-colors 88) (background dark)) nil)))
+ '(mumamo-background-chunk-submode1
+   ((((class color) (min-colors 88) (background dark)) (:background "#414244")))))
+
 ;; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
-			     (local-set-key (kbd "RET") 'newline-and-indent)))
+                             (local-set-key (kbd "RET") 'newline-and-indent)))
 
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
