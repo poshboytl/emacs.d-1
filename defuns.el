@@ -18,12 +18,14 @@
         (update-directory-autoloads autoload-dir))))
   (load autoload-file))
 
+(defvar *config-root* "~/.emacs.d")
+
 (defun ido-find-config ()
   (interactive)
   (find-file
-   (concat "~/.emacs.d/"
+   (concat *config-root*
 	   (ido-completing-read "Config file: "
-				(directory-files "~/.emacs.d/" nil "^[^.]")))))
+				(directory-files *config-root* nil "^[^.]")))))
 
 (defvar *37s-root* "/Volumes/37signals")
 
