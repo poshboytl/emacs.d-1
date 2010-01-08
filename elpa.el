@@ -7,7 +7,6 @@
 		  'js2-mode
 		  'magit
 		  'nav
-		  'nxml-mode
 		  'ruby-mode)
   "Libraries that should be installed by default.")
 
