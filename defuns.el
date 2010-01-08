@@ -18,6 +18,13 @@
         (update-directory-autoloads autoload-dir))))
   (load autoload-file))
 
+(defun ido-find-config ()
+  (interactive)
+  (find-file
+   (concat "~/.emacs.d/"
+	   (ido-completing-read "Config file: "
+				(directory-files "~/.emacs.d/" nil "^[^.]")))))
+
 (defun restore-frame ()
   (interactive)
   (set-frame-size (selected-frame)
