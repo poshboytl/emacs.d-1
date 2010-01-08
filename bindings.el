@@ -13,12 +13,6 @@
 ;; completion
 (global-set-key (kbd "M-ESC") 'hippie-expand)
 
-;; fuzzy matching
-(global-set-key "\C-t" 'fuzzy-find-in-project)
-(add-hook 'fuzzy-find-in-project-setup-hook
-	  '(lambda ()
-	     (fuzzy-find-project-root (textmate-project-root))))
-
 ;; open file
 (global-set-key (kbd "s-o") 'find-file)
 
