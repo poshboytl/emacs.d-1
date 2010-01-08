@@ -1,3 +1,7 @@
+;; TextMate mode
+(require 'textmate)
+(textmate-mode 1)
+
 ;; C
 (add-hook 'c-mode-hook
           '(lambda ()
