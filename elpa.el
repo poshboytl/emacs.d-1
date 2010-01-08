@@ -8,7 +8,6 @@
 		  'magit
 		  'nav
 		  'nxml-mode
-		  'rinari
 		  'ruby-mode)
   "Libraries that should be installed by default.")
 
