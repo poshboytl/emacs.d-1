@@ -25,6 +25,14 @@
 	   (ido-completing-read "Config file: "
 				(directory-files "~/.emacs.d/" nil "^[^.]")))))
 
+(defvar *37s-root* "/Volumes/37signals")
+
+(defun ido-find-37s-app ()
+  (interactive)
+  (find-file *37s-root*
+	     (ido-completing-read "Apps: "
+				  (directory-files *37s-root* nil "^[^.]"))))
+
 (defun restore-frame ()
   (interactive)
   (set-frame-size (selected-frame)
