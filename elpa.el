@@ -7,7 +7,8 @@
 		  'js2-mode
 		  'magit
 		  'nav
-		  'ruby-mode)
+		  'ruby-mode
+		  'textmate)
   "Libraries that should be installed by default.")
 
 (defun elpa-install ()
