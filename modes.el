@@ -1,5 +1,4 @@
 ;; TextMate mode
-(require 'textmate)
 (textmate-mode 1)
 
 ;; C
