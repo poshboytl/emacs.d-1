@@ -18,6 +18,12 @@
         (update-directory-autoloads autoload-dir))))
   (load autoload-file))
 
+(defun delete-region-or-char ()
+  (interactive)
+  (if (region-active-p)
+      (delete-region (region-beginning) (region-end))
+    (backward-delete-char-untabify 1)))
+
 (defvar *config-root* "~/.emacs.d/")
 
 (defun ido-find-config ()
