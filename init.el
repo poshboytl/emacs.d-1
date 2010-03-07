@@ -10,7 +10,6 @@
 
 (require 'cl)
 (require 'elpa)
-(require 'loaddefs)
 (require 'global)
 (require 'defuns)
 (require 'bindings)
@@ -18,6 +17,7 @@
 (require 'modes)
 (require 'theme)
 
+(regen-autoloads)
 (load custom-file 'noerror)
 
 ;; system specific config
