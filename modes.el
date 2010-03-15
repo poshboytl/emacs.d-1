@@ -33,9 +33,6 @@
              (add-hook 'before-save-hook 'untabify-buffer)))
 
 ;; js2
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-
 (add-hook 'js2-mode-hook
           '(lambda ()
              (require 'espresso)
