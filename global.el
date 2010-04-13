@@ -10,6 +10,9 @@
 ;; disable auto-save-list/.saves
 (setq auto-save-list-file-prefix nil)
 
+;; always open in the same window
+(setq ns-pop-up-frames nil)
+
 ;; show column number
 (column-number-mode 1)
 
