@@ -12,6 +12,8 @@
 		  'nav
 		  'ruby-mode
 		  'ruby-test-mode
+		  'slime
+		  'slime-repl
 		  'textmate)
   "Libraries that should be installed by default.")
 
