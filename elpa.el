@@ -11,6 +11,7 @@
 		  'magit
 		  'nav
 		  'ruby-mode
+		  'ruby-test-mode
 		  'textmate)
   "Libraries that should be installed by default.")
 
