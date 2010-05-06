@@ -3,6 +3,7 @@
   (menu-bar-mode -1))
 
 (defun os-x-theme ()
+  (require 'color-theme)
   (color-theme-twilight)
 
   ;; window
