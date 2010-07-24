@@ -4,12 +4,6 @@
   (byte-recompile-directory dotfiles-dir 0)
   (byte-recompile-directory (concat dotfiles-dir "elpa-to-submit/" 0)))
 
-(defun delete-region-or-char ()
-  (interactive)
-  (if (region-active-p)
-      (delete-region (region-beginning) (region-end))
-    (backward-delete-char-untabify 1)))
-
 (defvar *config-root* "~/.emacs.d/")
 
 (defun ido-find-config ()

@@ -1,9 +1,6 @@
 ;; readline kill backward
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
-;; delete region if selected
-(global-set-key (kbd "<backspace>") 'delete-region-or-char)
-
 ;; buffer menu
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 
