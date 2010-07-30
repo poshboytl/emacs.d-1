@@ -40,6 +40,11 @@
              (add-hook 'before-save-hook 'delete-trailing-whitespace)
              (setq js2-use-font-lock-faces t)))
 
+;; coffee
+(add-hook 'coffee-mode-hook
+  '(lambda()
+     (setq tab-width 2)))
+
 ;; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
 			     (local-set-key (kbd "RET") 'newline-and-indent)))
