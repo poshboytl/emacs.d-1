@@ -10,6 +10,7 @@
 		  'js2-mode
 		  'magit
 		  'nav
+		  'rinari
 		  'ruby-mode
 		  'ruby-test-mode
 		  'slime
