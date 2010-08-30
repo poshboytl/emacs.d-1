@@ -11,7 +11,7 @@
 (global-set-key (kbd "C-x C-z") 'shell)
 
 ;; completion
-(global-set-key (kbd "M-ESC") 'hippie-expand)
+(global-set-key (kbd "<escape>") 'hippie-expand)
 
 ;; open file
 (global-set-key (kbd "s-o") 'find-file)
