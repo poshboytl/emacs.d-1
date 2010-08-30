@@ -22,6 +22,9 @@
 (global-set-key (kbd "M-s-<left>") 'previous-buffer)
 (global-set-key (kbd "M-s-<right>") 'next-buffer)
 
+;; save
+(global-set-key (kbd "M-s") 'save-buffer)
+
 ;; close window
 (global-set-key (kbd "s-w") 'close-buffer)
 
