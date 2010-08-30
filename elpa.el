@@ -8,6 +8,7 @@
 		  'full-ack
 		  'inf-ruby
 		  'js2-mode
+		  'paredit
 		  'magit
 		  'nav
 		  'rinari
