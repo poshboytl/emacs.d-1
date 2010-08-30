@@ -25,6 +25,9 @@
 ;; save
 (global-set-key (kbd "M-s") 'save-buffer)
 
+;; undo
+(global-set-key (kbd "M-z") 'undo)
+
 ;; close window
 (global-set-key (kbd "s-w") 'close-buffer)
 
