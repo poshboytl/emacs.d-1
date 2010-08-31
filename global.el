@@ -10,8 +10,14 @@
 ;; disable auto-save-list/.saves
 (setq auto-save-list-file-prefix nil)
 
+;; disable aquamacs tabs
+(tabbar-mode nil)
+
 ;; always open in the same window
 (setq ns-pop-up-frames nil)
+
+;; fix mini-buffer resizing like crazy aquamacs bug
+(setq resize-mini-windows 'grow-only)
 
 ;; show column number
 (column-number-mode 1)
@@ -36,8 +42,5 @@
 
 ;; type y or n
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; fix mini-buffer resizing like crazy aquamacs bug
-(setq resize-mini-windows 'grow-only)
 
 (provide 'global)
