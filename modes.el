@@ -47,13 +47,13 @@
 
 ;; Lisp
 (add-hook 'emacs-lisp-mode-hook
-	  (lambda () (paredit-mode +1)))
+          (lambda () (paredit-mode 1)))
 (add-hook 'lisp-mode-hook
-	  (lambda () (paredit-mode +1)))
+          (lambda () (paredit-mode 1)))
 
 ;; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
-			     (local-set-key (kbd "RET") 'newline-and-indent)))
+                             (local-set-key (kbd "RET") 'newline-and-indent)))
 
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
