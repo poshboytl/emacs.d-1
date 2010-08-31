@@ -34,6 +34,9 @@
 ;; use clipboard
 (setq x-select-enable-clipboard t)
 
+;; type y or n
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; fix mini-buffer resizing like crazy aquamacs bug
 (setq resize-mini-windows 'grow-only)
 
