@@ -11,7 +11,8 @@
 (setq auto-save-list-file-prefix nil)
 
 ;; disable aquamacs tabs
-(tabbar-mode nil)
+(if (boundp 'tabbar-mode)
+    (tabbar-mode nil))
 
 ;; always open in the same window
 (setq ns-pop-up-frames nil)
