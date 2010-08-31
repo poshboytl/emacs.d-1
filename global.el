@@ -34,4 +34,7 @@
 ;; use clipboard
 (setq x-select-enable-clipboard t)
 
+;; fix mini-buffer resizing like crazy aquamacs bug
+(setq resize-mini-windows 'grow-only)
+
 (provide 'global)
