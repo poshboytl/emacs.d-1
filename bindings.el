@@ -31,6 +31,11 @@
 ;; close window
 (global-set-key (kbd "s-w") 'close-buffer)
 
+(if (boundp 'osx-key-mode-map)
+    (progn
+      (define-key osx-key-mode-map (kbd "A-w") 'close-buffer)
+      (define-key osx-key-mode-map (kbd "A-k") 'kill-this-buffer)))
+
 ;; window switching
 (global-set-key (kbd "s-`") 'other-window)
 
