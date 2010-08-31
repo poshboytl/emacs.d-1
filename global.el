@@ -40,6 +40,9 @@
 ;; use clipboard
 (setq x-select-enable-clipboard t)
 
+;; always use mono-spaced fonts
+(setq aquamacs-autoface-mode nil)
+
 ;; type y or n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
