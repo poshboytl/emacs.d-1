@@ -79,4 +79,14 @@
 ;; text
 (add-hook 'text-mode-hook '(lambda () (flyspell-mode 1)))
 
+;; whitespace
+(setq whitespace-style
+      '(trailing
+        lines
+        space-before-tab
+        space-after-tab))
+(setq whitespace-line-column 80)
+
+(global-whitespace-mode 1)
+
 (provide 'modes)
