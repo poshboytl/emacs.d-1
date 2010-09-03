@@ -12,7 +12,7 @@
 
 ;; disable aquamacs tabs
 (if (boundp 'tabbar-mode)
-    (tabbar-mode nil))
+    (tabbar-mode -1))
 
 ;; always open in the same window
 (setq ns-pop-up-frames nil)
