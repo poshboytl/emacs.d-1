@@ -45,12 +45,6 @@
   '(lambda()
      (setq tab-width 2)))
 
-;; Lisp
-(add-hook 'emacs-lisp-mode-hook
-          (lambda () (paredit-mode 1)))
-(add-hook 'lisp-mode-hook
-          (lambda () (paredit-mode 1)))
-
 ;; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
                              (local-set-key (kbd "RET") 'newline-and-indent)))
