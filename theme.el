@@ -4,7 +4,10 @@
 
 (defun os-x-theme ()
   (require 'color-theme)
-  (color-theme-twilight)
+
+  (if (string-equal (getenv "BACKGROUND") "dark")
+      (color-theme-twilight)
+    (color-theme-gtk-ide))
 
   ;; window
   (setq default-frame-alist
