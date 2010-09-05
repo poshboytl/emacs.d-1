@@ -11,8 +11,8 @@
 
   ;; window
   (setq default-frame-alist
-	'((left . 0) (top . 0)
-	  (width . 80) (height . 40)))
+	'((left . 22) (top . 44)
+	  (width . 80) (height . 50)))
 
   ;; font
   (setq mac-allow-anti-aliasing t)
