@@ -76,10 +76,8 @@
 ;; whitespace
 (setq whitespace-style
       '(trailing
-        lines
         space-before-tab
         space-after-tab))
-(setq whitespace-line-column 80)
 
 (global-whitespace-mode 1)
 
