@@ -39,6 +39,12 @@
 ;; window switching
 (global-set-key (kbd "s-`") 'other-window)
 
+;; font size
+(global-set-key (kbd "s-+") 'text-scale-adjust)
+(global-set-key (kbd "s--") 'text-scale-adjust)
+(global-set-key (kbd "s-0") 'text-scale-adjust)
+(global-set-key (kbd "s-=") 'text-scale-adjust)
+
 ;; prefer dired over dumping dir list to buffer
 (global-set-key "\C-x\C-d" 'dired)
 
