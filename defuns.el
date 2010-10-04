@@ -4,23 +4,6 @@
   (byte-recompile-directory dotfiles-dir 0)
   (byte-recompile-directory (concat dotfiles-dir "elpa-to-submit/" 0)))
 
-(defvar *config-root* "~/.emacs.d/")
-
-(defun ido-find-config ()
-  (interactive)
-  (find-file
-   (concat *config-root*
-           (ido-completing-read "Config file: "
-                                (directory-files *config-root* nil "^[^.]")))))
-
-(defvar *37s-root* "/Volumes/37signals/")
-
-(defun ido-find-37s-app ()
-  (interactive)
-  (find-file *37s-root*
-             (ido-completing-read "Apps: "
-                                  (directory-files *37s-root* nil "^[^.]"))))
-
 (defun close-all-buffers ()
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
