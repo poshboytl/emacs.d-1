@@ -8,6 +8,12 @@
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
 
+(defun large-font ()
+  (interactive)
+  (set-face-font
+   'default
+   "-apple-DejaVu_Sans_Mono-medium-normal-normal-*-20-*-*-*-m-0-iso10646-"))
+
 (defun restore-frame ()
   (interactive)
   (set-frame-size (selected-frame)
