@@ -7,6 +7,9 @@
 ;; magit
 (global-set-key "\C-xg" 'magit-status)
 
+;; speedbar
+(global-set-key (kbd "s-s") 'sr-speedbar-toggle)
+
 ;; start a new shell
 (global-set-key (kbd "C-x C-z") 'shell)
 
