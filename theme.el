@@ -3,12 +3,6 @@
   (menu-bar-mode -1))
 
 (defun os-x-theme ()
-  (require 'color-theme)
-
-  (if (string-equal (getenv "BACKGROUND") "dark")
-      (color-theme-twilight)
-    (color-theme-gtk-ide))
-
   ;; window
   (setq default-frame-alist
 	'((left . 22) (top . 44)
@@ -22,5 +16,13 @@
 
 (if window-system (os-x-theme)
   (term-theme))
+
+(setq frame-background-mode (intern (getenv "BACKGROUND")))
+
+(when (>= (display-color-cells) 256)
+  (require 'color-theme)
+  (if (string-equal (getenv "BACKGROUND") "dark")
+      (color-theme-twilight)
+    (color-theme-gtk-ide)))
 
 (provide 'theme)
