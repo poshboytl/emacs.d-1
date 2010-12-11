@@ -9,7 +9,6 @@
 		  'inf-ruby
 		  'js2-mode
 		  'magit
-		  'nav
 		  'ruby-mode
 		  'ruby-test-mode
 		  'textmate)
