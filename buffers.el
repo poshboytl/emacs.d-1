@@ -8,9 +8,6 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
-;; nav
-(setq nav-resize-frame-p t)
-
 ;; speedbar
 (require 'sr-speedbar)
 
