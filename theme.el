@@ -22,7 +22,7 @@
 (when (>= (display-color-cells) 256)
   (require 'color-theme)
   (if (string-equal (getenv "BACKGROUND") "dark")
-      (color-theme-twilight)
+      (color-theme-charcoal-black)
     (color-theme-gtk-ide)))
 
 (provide 'theme)
