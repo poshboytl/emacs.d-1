@@ -8,7 +8,7 @@
 (global-set-key "\C-xg" 'magit-status)
 
 ;; speedbar
-(global-set-key (kbd "C-^") 'sr-speedbar-toggle)
+(global-set-key (kbd "M-s") 'sr-speedbar-toggle)
 
 ;; start a new shell
 (global-set-key (kbd "C-x C-z") 'shell)
@@ -24,9 +24,6 @@
 (global-set-key (kbd "s-}") 'next-buffer)
 (global-set-key (kbd "M-s-<left>") 'previous-buffer)
 (global-set-key (kbd "M-s-<right>") 'next-buffer)
-
-;; save
-(global-set-key (kbd "M-s") 'save-buffer)
 
 ;; undo
 (global-set-key (kbd "M-z") 'undo)
