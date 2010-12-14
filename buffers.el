@@ -28,4 +28,15 @@
 (setq sr-speedbar-right-side nil)
 (setq sr-speedbar-width-console 40)
 
+(defadvice sr-speedbar-open (after sr-speedbar-open-resize-frame activate)
+  (set-frame-width (selected-frame)
+		   (+ (frame-width) sr-speedbar-width)))
+(ad-enable-advice 'sr-speedbar-open 'after 'sr-speedbar-open-resize-frame)
+
+(defadvice sr-speedbar-close (after sr-speedbar-close-resize-frame activate)
+  (sr-speedbar-recalculate-width)
+  (set-frame-width (selected-frame)
+		   (- (frame-width) sr-speedbar-width)))
+(ad-enable-advice 'sr-speedbar-close 'after 'sr-speedbar-close-resize-frame)
+
 (provide 'buffers)
