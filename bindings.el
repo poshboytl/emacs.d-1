@@ -8,7 +8,7 @@
 (global-set-key "\C-xg" 'magit-status)
 
 ;; speedbar
-(global-set-key (kbd "M-s") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
 
 ;; completion
 (global-set-key (kbd "<escape>") 'hippie-expand)
