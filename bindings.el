@@ -10,9 +10,6 @@
 ;; speedbar
 (global-set-key (kbd "M-s") 'sr-speedbar-toggle)
 
-;; start a new shell
-(global-set-key (kbd "C-x C-z") 'shell)
-
 ;; completion
 (global-set-key (kbd "<escape>") 'hippie-expand)
 

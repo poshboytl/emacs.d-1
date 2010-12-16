@@ -62,13 +62,37 @@
  'ruby-mode
  '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
 
-;; shell
-(eval-after-load 'shell
+;; eshell
+(setq eshell-cmpl-cycle-completions nil
+      eshell-save-history-on-exit t
+      eshell-cmpl-dir-ignore "\\`\\(\\.\\.?\\|CVS\\|\\.svn\\|\\.git\\)/\\'")
+
+(eval-after-load 'esh-opt
   '(progn
-     (define-key shell-mode-map [up] 'comint-previous-input)
-     (define-key shell-mode-map [down] 'comint-next-input)
-     (define-key shell-mode-map "\C-p" 'comint-previous-input)
-     (define-key shell-mode-map "\C-n" 'comint-next-input)))
+     (require 'em-prompt)
+     (require 'em-term)
+     (require 'em-cmpl)
+
+     (setenv "PAGER" "cat")
+
+     (set-face-attribute 'eshell-prompt nil :foreground "turquoise1")
+     (add-hook 'eshell-mode-hook
+	       '(lambda ()
+		  (define-key eshell-mode-map "\C-a" 'eshell-bol)))
+     (add-to-list 'eshell-output-filter-functions 'eshell-handle-ansi-color)
+
+     (setq eshell-prompt-regexp "^$ ")
+     (setq eshell-prompt-function (lambda () "$ "))
+     (setq eshell-history-file-name "~/.history")
+
+     (add-to-list 'eshell-visual-commands "ssh")
+     (add-to-list 'eshell-visual-commands "tail")
+     (add-to-list 'eshell-command-completions-alist
+                  '("gunzip" "gz\\'"))
+     (add-to-list 'eshell-command-completions-alist
+                  '("tar" "\\(\\.tar|\\.tgz\\|\\.tar\\.gz\\)\\'"))))
+
+
 
 ;; text
 (add-hook 'text-mode-hook '(lambda () (flyspell-mode 1)))
