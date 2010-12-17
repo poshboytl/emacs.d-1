@@ -5,6 +5,7 @@
 (add-to-list 'load-path vendor-dir)
 
 (defvar packages (list
+		  'color-theme
 		  'full-ack
 		  'inf-ruby
 		  'js2-mode
