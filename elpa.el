@@ -5,14 +5,18 @@
 (add-to-list 'load-path vendor-dir)
 
 (defvar packages (list
-		  'color-theme
-		  'full-ack
-		  'inf-ruby
-		  'js2-mode
-		  'magit
-		  'ruby-mode
-		  'ruby-test-mode
-		  'textmate)
+                  'color-theme
+                  'full-ack
+                  'inf-ruby
+                  'js2-mode
+                  'magit
+                  'ruby-mode
+                  'ruby-test-mode
+                  'starter-kit
+                  'starter-kit-js
+                  'starter-kit-lisp
+                  'starter-kit-ruby
+                  'textmate)
   "Libraries that should be installed by default.")
 
 (defun elpa-install ()

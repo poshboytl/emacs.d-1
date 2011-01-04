@@ -34,22 +34,4 @@
   (interactive)
   (kill-buffer (current-buffer)))
 
-(defun tabify-buffer ()
-  (interactive)
-  (tabify (point-min) (point-max)))
-
-(defun untabify-buffer ()
-  (interactive)
-  (untabify (point-min) (point-max)))
-
-(defun indent-buffer ()
-  (interactive)
-  (indent-region (point-min) (point-max)))
-
-(defun cleanup-buffer ()
-  (interactive)
-  (indent-buffer)
-  (untabify-buffer)
-  (delete-trailing-whitespace))
-
 (provide 'defuns)

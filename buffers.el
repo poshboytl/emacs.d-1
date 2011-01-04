@@ -1,12 +1,5 @@
 ;; ido
-(setq ido-enable-prefix nil
-      ido-enable-flex-matching t
-      ido-create-new-buffer 'always
-      ido-max-prospects 10)
-
-;; nicer buffer names
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'forward)
+(setq ido-use-filename-at-point nil)
 
 ;; speedbar
 (require 'sr-speedbar)
@@ -31,13 +24,13 @@
 (when window-system
   (defadvice sr-speedbar-open (after sr-speedbar-open-resize-frame activate)
     (set-frame-width (selected-frame)
-		     (+ (frame-width) sr-speedbar-width)))
+                     (+ (frame-width) sr-speedbar-width)))
   (ad-enable-advice 'sr-speedbar-open 'after 'sr-speedbar-open-resize-frame)
 
   (defadvice sr-speedbar-close (after sr-speedbar-close-resize-frame activate)
     (sr-speedbar-recalculate-width)
     (set-frame-width (selected-frame)
-		     (- (frame-width) sr-speedbar-width)))
+                     (- (frame-width) sr-speedbar-width)))
   (ad-enable-advice 'sr-speedbar-close 'after 'sr-speedbar-close-resize-frame))
 
 (provide 'buffers)
