@@ -1,3 +1,6 @@
+(defun esk-turn-on-paredit ())
+(defun esk-paredit-nonlisp ())
+
 (defun recompile-init ()
   "Byte-compile all your dotfiles again."
   (interactive)
