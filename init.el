@@ -5,6 +5,8 @@
 
 (setq custom-file (concat dotfiles-dir "custom.el"))
 
+(setq recentf-save-file "~/.emacs.d/recentf")
+
 (require 'cl)
 (require 'elpa)
 (require 'global)
