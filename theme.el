@@ -15,7 +15,8 @@
 (when window-system
   (os-x-theme))
 
-(setq frame-background-mode (intern (getenv "BACKGROUND")))
+(when (getenv "BACKGROUND")
+  (setq frame-background-mode (intern (getenv "BACKGROUND"))))
 
 (when (>= (display-color-cells) 256)
   (require 'color-theme)
