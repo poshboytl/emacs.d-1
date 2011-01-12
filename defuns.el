@@ -7,10 +7,6 @@
   (byte-recompile-directory dotfiles-dir 0)
   (byte-recompile-directory (concat dotfiles-dir "elpa-to-submit/" 0)))
 
-(defun close-all-buffers ()
-  (interactive)
-  (mapc 'kill-buffer (buffer-list)))
-
 (defun large-font ()
   (interactive)
   (set-face-font
