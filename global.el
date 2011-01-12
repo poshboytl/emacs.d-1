@@ -10,17 +10,11 @@
 ;; always open in the same window
 (setq ns-pop-up-frames nil)
 
-;; no bell
-(setq ring-bell-function 'ignore)
-
 ;; show extra whitespace
 (setq show-trailing-whitespace t)
 
 ;; delete trailing whitespace before save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-;; set encoding
-(prefer-coding-system 'utf-8)
 
 ;; hide empty line fringe
 (set-default 'indicate-empty-lines nil)
