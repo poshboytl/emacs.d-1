@@ -72,6 +72,7 @@
 
 ;; text
 (add-hook 'text-mode-hook '(lambda () (flyspell-mode 1)))
+(remove-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; whitespace
 (setq whitespace-style
