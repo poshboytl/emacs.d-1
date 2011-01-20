@@ -1,3 +1,6 @@
+;; buffer menu
+(global-set-key (kbd "C-x C-b") 'buffer-menu)
+
 ;; speedbar
 (global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
 
