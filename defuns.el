@@ -33,4 +33,8 @@
   (interactive)
   (kill-buffer (current-buffer)))
 
+(defun esk-tabify-buffer ()
+  (interactive)
+  (tabify (point-min) (point-max)))
+
 (provide 'defuns)
