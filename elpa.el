@@ -33,19 +33,19 @@
   "Regenerate the autoload definitions file if necessary and load it."
   (interactive "P")
   (let ((autoload-dir vendor-dir)
-        (generated-autoload-file autoload-file))
+	(generated-autoload-file autoload-file))
     (when (or force-regen
               (not (file-exists-p autoload-file))
               (some (lambda (f) (file-newer-than-file-p f autoload-file))
                     (directory-files autoload-dir t "\\.el$")))
       (message "Updating autoloads...")
       (let (emacs-lisp-mode-hook)
-        (update-directory-autoloads autoload-dir))))
+	(update-directory-autoloads autoload-dir))))
   (load autoload-file))
 
 (require 'package)
 (dolist (source '(("technomancy" . "http://repo.technomancy.us/emacs/")
-                  ("marmalade" . "http://your.domain/packages/")
+                  ("marmalade" . "http://marmalade-repo.org/packages")
                   ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
 (package-initialize)
