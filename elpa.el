@@ -5,6 +5,7 @@
 (add-to-list 'load-path vendor-dir)
 
 (defvar packages (list
+                  'coffee-mode
                   'color-theme
                   'full-ack
                   'inf-ruby
