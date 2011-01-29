@@ -9,6 +9,7 @@
                   'color-theme
                   'full-ack
                   'go-mode
+                  'haskell-mode
                   'inf-ruby
                   'js2-mode
                   'magit
