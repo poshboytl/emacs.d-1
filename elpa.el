@@ -14,6 +14,7 @@
                   'magit
                   'mustache-mode
                   'peepopen
+                  'rhtml
                   'ruby-mode
                   'ruby-test-mode
                   'starter-kit
