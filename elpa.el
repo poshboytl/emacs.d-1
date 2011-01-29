@@ -19,6 +19,7 @@
                   'rhtml
                   'ruby-mode
                   'ruby-test-mode
+                  'sr-speedbar
                   'starter-kit
                   'starter-kit-js
                   'starter-kit-lisp
