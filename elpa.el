@@ -7,6 +7,7 @@
 (defvar packages (list
                   'coffee-mode
                   'color-theme
+                  'color-theme-twilight
                   'erlang
                   'full-ack
                   'go-mode
