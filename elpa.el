@@ -1,5 +1,4 @@
 (setq package-user-dir (concat dotfiles-dir "elpa"))
-(setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 
 (defvar packages (list
                   'coffee-mode
