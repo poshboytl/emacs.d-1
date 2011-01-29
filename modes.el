@@ -28,9 +28,6 @@
 
 (add-hook 'diff-mode-hook '(lambda () (flyspell-mode 1)))
 
-;; Erlang
-(add-to-list 'auto-mode-alist '("\\.erl$" . erlang-mode))
-
 ;; HTML
 (add-hook 'html-mode-hook
           '(lambda()

@@ -7,6 +7,7 @@
 (defvar packages (list
                   'coffee-mode
                   'color-theme
+                  'erlang
                   'full-ack
                   'go-mode
                   'haskell-mode
