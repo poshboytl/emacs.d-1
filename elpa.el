@@ -10,6 +10,7 @@
                   'inf-ruby
                   'js2-mode
                   'magit
+                  'peepopen
                   'ruby-mode
                   'ruby-test-mode
                   'starter-kit
