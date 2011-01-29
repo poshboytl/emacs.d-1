@@ -8,6 +8,7 @@
                   'coffee-mode
                   'color-theme
                   'full-ack
+                  'go-mode
                   'inf-ruby
                   'js2-mode
                   'magit
