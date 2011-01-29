@@ -11,6 +11,7 @@
                   'inf-ruby
                   'js2-mode
                   'magit
+                  'mustache-mode
                   'peepopen
                   'ruby-mode
                   'ruby-test-mode
