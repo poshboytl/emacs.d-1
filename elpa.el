@@ -44,7 +44,8 @@
   (load autoload-file))
 
 (require 'package)
-(dolist (source '(("technomancy" . "http://repo.technomancy.us/emacs/")
+(dolist (source '(("josh" . "http://josh.github.com/elpa/")
+                  ("technomancy" . "http://repo.technomancy.us/emacs/")
                   ("marmalade" . "http://marmalade-repo.org/packages")
                   ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
