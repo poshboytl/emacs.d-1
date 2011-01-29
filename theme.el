@@ -18,7 +18,7 @@
 (when (getenv "BACKGROUND")
   (setq frame-background-mode (intern (getenv "BACKGROUND"))))
 
-(when (>= (display-color-cells) 256)
+(when (and (functionp 'color-theme-install) (>= (display-color-cells) 256))
   (if (string-equal (getenv "BACKGROUND") "dark")
       (color-theme-charcoal-black)
     (color-theme-gtk-ide)))
