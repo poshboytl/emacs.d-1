@@ -1,12 +1,6 @@
 (defun esk-turn-on-paredit ())
 (defun esk-paredit-nonlisp ())
 
-(defun recompile-init ()
-  "Byte-compile all your dotfiles again."
-  (interactive)
-  (byte-recompile-directory dotfiles-dir 0)
-  (byte-recompile-directory (concat dotfiles-dir "elpa-to-submit/" 0)))
-
 (defun large-font ()
   (interactive)
   (set-face-font
