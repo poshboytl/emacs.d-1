@@ -1,6 +1,3 @@
-(defun esk-turn-on-paredit ())
-(defun esk-paredit-nonlisp ())
-
 (defun large-font ()
   (interactive)
   (set-face-font
@@ -40,5 +37,11 @@
       (esk-tabify-buffer)
     (esk-untabify-buffer))
   (delete-trailing-whitespace))
+
+(defun esk-paredit-nonlisp ()
+  (message "paredit nonlisp")
+  (set (make-local-variable 'paredit-space-for-delimiter-predicates)
+       '((lambda (endp delimiter) nil)))
+  (paredit-mode 1))
 
 (provide 'defuns)

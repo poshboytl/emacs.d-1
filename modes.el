@@ -1,6 +1,5 @@
 (remove-hook 'esk-coding-hook 'esk-turn-on-hl-line-mode)
 (remove-hook 'esk-coding-hook 'esk-pretty-lambdas)
-(remove-hook 'esk-coding-hook 'esk-turn-on-paredit)
 
 (add-hook 'esk-coding-hook 'esk-cleanup-on-save)
 
@@ -16,10 +15,16 @@
              (setq tab-width 8)
              (setq indent-tabs-mode t)))
 
+(add-hook 'c-mode-hook 'esk-run-coding-hook)
+(add-hook 'c-mode-hook 'esk-paredit-nonlisp)
+
 ;; CSS
 (add-hook 'css-mode-hook
           '(lambda ()
              (setq css-indent-offset 2)))
+
+(add-hook 'css-mode-hook 'esk-run-coding-hook)
+(add-hook 'css-mode-hook 'esk-paredit-nonlisp)
 
 ;; Diff
 (add-hook 'diff-mode-hook 'turn-on-auto-fill)
@@ -33,6 +38,7 @@
              (setq tab-width 2)))
 
 (add-hook 'html-mode-hook 'esk-run-coding-hook)
+(add-hook 'html-mode-hook 'esk-paredit-nonlisp)
 
 ;; js2
 (add-hook 'js2-mode-hook
@@ -50,6 +56,7 @@
              (setq tab-width 2)))
 
 (add-hook 'coffee-mode-hook 'esk-run-coding-hook)
+(add-hook 'coffee-mode-hook 'esk-paredit-nonlisp)
 
 ;; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
