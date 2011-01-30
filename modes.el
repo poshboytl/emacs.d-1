@@ -1,6 +1,7 @@
 (remove-hook 'esk-coding-hook 'esk-turn-on-hl-line-mode)
 (remove-hook 'esk-coding-hook 'esk-pretty-lambdas)
 
+(add-hook 'esk-coding-hook 'esk-turn-on-whitespace)
 (add-hook 'esk-coding-hook 'esk-cleanup-on-save)
 
 ;; TextMate mode
@@ -73,13 +74,5 @@
 ;; text
 (add-hook 'text-mode-hook '(lambda () (flyspell-mode 1)))
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
-
-;; whitespace
-(setq whitespace-style
-      '(trailing
-        space-before-tab
-        space-after-tab))
-
-(global-whitespace-mode 1)
 
 (provide 'modes)
