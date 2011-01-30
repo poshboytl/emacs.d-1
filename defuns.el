@@ -31,4 +31,14 @@
   (interactive)
   (tabify (point-min) (point-max)))
 
+(defun esk-cleanup-on-save ()
+  (add-hook 'before-save-hook 'esk-cleanup-buffer))
+
+(defun esk-cleanup-buffer ()
+  (interactive)
+  (if indent-tabs-mode
+      (esk-tabify-buffer)
+    (esk-untabify-buffer))
+  (delete-trailing-whitespace))
+
 (provide 'defuns)

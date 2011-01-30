@@ -16,9 +16,6 @@
 ;; show extra whitespace
 (setq show-trailing-whitespace t)
 
-;; delete trailing whitespace before save
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 ;; hide empty line fringe
 (set-default 'indicate-empty-lines nil)
 

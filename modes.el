@@ -3,6 +3,8 @@
 (remove-hook 'esk-coding-hook 'esk-pretty-lambdas)
 (remove-hook 'esk-coding-hook 'esk-turn-on-paredit)
 
+(add-hook 'esk-coding-hook 'esk-cleanup-on-save)
+
 ;; TextMate mode
 (when (functionp 'textmate-mode)
   (textmate-mode 1))
@@ -13,26 +15,23 @@
              (c-set-style "k&r")
              (setq c-basic-offset 8)
              (setq tab-width 8)
-             (setq indent-tabs-mode t)
-             (add-hook 'before-save-hook 'esk-tabify-buffer)))
+             (setq indent-tabs-mode t)))
 
 ;; CSS
 (add-hook 'css-mode-hook
           '(lambda ()
-             (setq css-indent-offset 2)
-             (add-hook 'before-save-hook 'esk-untabify-buffer)))
+             (setq css-indent-offset 2)))
 
 ;; Diff
-(setq-default fill-column 72)
 (add-hook 'diff-mode-hook 'turn-on-auto-fill)
-
-(add-hook 'diff-mode-hook '(lambda () (flyspell-mode 1)))
+(add-hook 'diff-mode-hook '(lambda ()
+                             (setq fill-column 72)
+                             (flyspell-mode 1)))
 
 ;; HTML
 (add-hook 'html-mode-hook
           '(lambda()
-             (setq tab-width 2)
-             (add-hook 'before-save-hook 'esk-untabify-buffer)))
+             (setq tab-width 2)))
 
 (add-hook 'html-mode-hook 'esk-run-coding-hook)
 
@@ -44,23 +43,18 @@
              (set (make-local-variable 'indent-line-function)
                   'espresso-indent-line)
              (define-key js2-mode-map (kbd "RET") 'newline-and-indent)
-             (add-hook 'before-save-hook 'delete-trailing-whitespace)
              (setq js2-use-font-lock-faces t)))
 
 ;; coffee
 (add-hook 'coffee-mode-hook
-  '(lambda()
-     (setq tab-width 2)))
+          '(lambda()
+             (setq tab-width 2)))
 
 (add-hook 'coffee-mode-hook 'esk-run-coding-hook)
 
 ;; Ruby
 (add-hook 'ruby-mode-hook '(lambda ()
                              (local-set-key (kbd "RET") 'newline-and-indent)))
-
-(font-lock-add-keywords
- 'ruby-mode
- '(("\\<\\(attr_accessor\\|attr_reader\\|attr_writer\\|extend\\|include\\|require\\)\\>" 1 font-lock-keyword-face)))
 
 ;; eshell
 (eval-after-load 'esh-opt
