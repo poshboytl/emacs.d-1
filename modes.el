@@ -3,6 +3,7 @@
 
 (add-hook 'esk-coding-hook 'esk-turn-on-whitespace)
 (add-hook 'esk-coding-hook 'esk-cleanup-on-save)
+(add-hook 'esk-coding-hook 'esk-ident-on-return)
 
 ;; TextMate mode
 (when (functionp 'textmate-mode)
@@ -48,20 +49,16 @@
              (setq espresso-indent-level 2)
              (set (make-local-variable 'indent-line-function)
                   'espresso-indent-line)
-             (define-key js2-mode-map (kbd "RET") 'newline-and-indent)
              (setq js2-use-font-lock-faces t)))
 
 ;; coffee
 (add-hook 'coffee-mode-hook
           '(lambda()
-             (setq tab-width 2)))
+             (setq tab-width 2)
+             (local-set-key (kbd "RET") 'newline)))
 
 (add-hook 'coffee-mode-hook 'esk-run-coding-hook)
 (add-hook 'coffee-mode-hook 'esk-paredit-nonlisp)
-
-;; Ruby
-(add-hook 'ruby-mode-hook '(lambda ()
-                             (local-set-key (kbd "RET") 'newline-and-indent)))
 
 ;; eshell
 (eval-after-load 'esh-opt
