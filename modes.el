@@ -1,4 +1,3 @@
-(remove-hook 'esk-coding-hook 'esk-local-comment-auto-fill)
 (remove-hook 'esk-coding-hook 'esk-turn-on-hl-line-mode)
 (remove-hook 'esk-coding-hook 'esk-pretty-lambdas)
 (remove-hook 'esk-coding-hook 'esk-turn-on-paredit)
