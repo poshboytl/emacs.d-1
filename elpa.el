@@ -5,7 +5,6 @@
                   'color-theme
                   'color-theme-twilight
                   'erlang
-                  'espresso
                   'full-ack
                   'go-mode
                   'haskell-mode
