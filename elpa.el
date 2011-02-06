@@ -10,7 +10,6 @@
                   'go-mode
                   'haskell-mode
                   'inf-ruby
-                  'js2-mode
                   'magit
                   'mustache-mode
                   'peepopen
@@ -19,7 +18,6 @@
                   'ruby-test-mode
                   'sr-speedbar
                   'starter-kit
-                  'starter-kit-js
                   'starter-kit-lisp
                   'starter-kit-ruby
                   'textmate)
@@ -31,7 +29,7 @@
   (package-refresh-contents)
   (dolist (package packages)
     (unless (or (member package package-activated-list)
-		(functionp package))
+                (functionp package))
       (message "Installing %s" (symbol-name package))
       (package-install package))))
 

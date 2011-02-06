@@ -42,14 +42,13 @@
 (add-hook 'html-mode-hook 'esk-run-coding-hook)
 (add-hook 'html-mode-hook 'esk-paredit-nonlisp)
 
-;; js2
-(add-hook 'js2-mode-hook
+;; js
+(add-hook 'js-mode-hook
           '(lambda ()
-             (require 'espresso)
-             (setq espresso-indent-level 2)
-             (set (make-local-variable 'indent-line-function)
-                  'espresso-indent-line)
-             (setq js2-use-font-lock-faces t)))
+             (setq js-indent-level 2)))
+
+(add-hook 'js-mode-hook 'esk-run-coding-hook)
+(add-hook 'js-mode-hook 'esk-paredit-nonlisp)
 
 ;; coffee
 (add-hook 'coffee-mode-hook
