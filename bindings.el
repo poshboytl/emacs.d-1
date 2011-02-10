@@ -14,7 +14,4 @@
 (global-set-key (kbd "s-0") 'text-scale-adjust)
 (global-set-key (kbd "s-=") 'text-scale-adjust)
 
-;; M-x without meta
-(global-set-key (kbd "C-x C-m") 'execute-extended-command)
-
 (provide 'bindings)
