@@ -20,7 +20,6 @@
 
 (when (and (functionp 'color-theme-install) (>= (display-color-cells) 256))
   (if (string-equal (getenv "BACKGROUND") "dark")
-      (color-theme-charcoal-black)
-    (color-theme-gtk-ide)))
+      (color-theme-charcoal-black)))
 
 (provide 'theme)
