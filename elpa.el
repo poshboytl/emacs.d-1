@@ -3,6 +3,7 @@
 (defvar packages (list
                   'coffee-mode
                   'color-theme
+                  'color-theme-solarized
                   'color-theme-twilight
                   'erlang
                   'full-ack
