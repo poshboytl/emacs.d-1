@@ -20,6 +20,7 @@
 
 (when (and (functionp 'color-theme-install) (>= (display-color-cells) 256))
   (if (string-equal (getenv "BACKGROUND") "dark")
-      (color-theme-solarized-dark)))
+      (color-theme-solarized-dark)
+    (color-theme-solarized-light)))
 
 (provide 'theme)
