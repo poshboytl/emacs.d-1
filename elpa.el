@@ -17,6 +17,7 @@
                   'ruby-mode
                   'sr-speedbar
                   'starter-kit
+                  'starter-kit-bindings
                   'starter-kit-lisp
                   'starter-kit-ruby
                   'textmate)
