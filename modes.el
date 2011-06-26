@@ -1,9 +1,9 @@
-(remove-hook 'esk-coding-hook 'esk-turn-on-hl-line-mode)
-(remove-hook 'esk-coding-hook 'esk-pretty-lambdas)
+(remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
+(remove-hook 'prog-mode-hook 'esk-pretty-lambdas)
 
-(add-hook 'esk-coding-hook 'esk-turn-on-whitespace)
-(add-hook 'esk-coding-hook 'esk-cleanup-on-save)
-(add-hook 'esk-coding-hook 'esk-ident-on-return)
+(add-hook 'prog-mode-hook 'esk-turn-on-whitespace)
+(add-hook 'prog-mode-hook 'esk-cleanup-on-save)
+(add-hook 'prog-mode-hook 'esk-ident-on-return)
 
 ;; TextMate mode
 (when (functionp 'textmate-mode)
@@ -17,7 +17,7 @@
              (setq tab-width 8)
              (setq indent-tabs-mode t)))
 
-(add-hook 'c-mode-hook 'esk-run-coding-hook)
+(add-hook 'c-mode-hook 'prog-mode-hook)
 (add-hook 'c-mode-hook 'esk-paredit-nonlisp)
 
 ;; CSS
@@ -25,7 +25,7 @@
           '(lambda ()
              (setq css-indent-offset 2)))
 
-(add-hook 'css-mode-hook 'esk-run-coding-hook)
+(add-hook 'css-mode-hook 'prog-mode-hook)
 (add-hook 'css-mode-hook 'esk-paredit-nonlisp)
 
 ;; Diff
@@ -39,7 +39,7 @@
           '(lambda()
              (setq tab-width 2)))
 
-(add-hook 'html-mode-hook 'esk-run-coding-hook)
+(add-hook 'html-mode-hook 'prog-mode-hook)
 (add-hook 'html-mode-hook 'esk-paredit-nonlisp)
 
 ;; js
@@ -56,7 +56,7 @@
              (setq tab-width 2)
              (local-set-key (kbd "RET") 'newline)))
 
-(add-hook 'coffee-mode-hook 'esk-run-coding-hook)
+(add-hook 'coffee-mode-hook 'prog-mode-hook)
 (add-hook 'coffee-mode-hook 'esk-paredit-nonlisp)
 
 ;; eshell
