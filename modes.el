@@ -17,7 +17,6 @@
              (setq tab-width 8)
              (setq indent-tabs-mode t)))
 
-(add-hook 'c-mode-hook 'prog-mode-hook)
 (add-hook 'c-mode-hook 'esk-paredit-nonlisp)
 
 ;; CSS
@@ -25,7 +24,6 @@
           '(lambda ()
              (setq css-indent-offset 2)))
 
-(add-hook 'css-mode-hook 'prog-mode-hook)
 (add-hook 'css-mode-hook 'esk-paredit-nonlisp)
 
 ;; Diff
@@ -39,7 +37,6 @@
           '(lambda()
              (setq tab-width 2)))
 
-(add-hook 'html-mode-hook 'prog-mode-hook)
 (add-hook 'html-mode-hook 'esk-paredit-nonlisp)
 
 ;; js
@@ -47,7 +44,6 @@
           '(lambda ()
              (setq js-indent-level 2)))
 
-(add-hook 'js-mode-hook 'esk-run-coding-hook)
 (add-hook 'js-mode-hook 'esk-paredit-nonlisp)
 
 ;; coffee
@@ -56,7 +52,6 @@
              (setq tab-width 2)
              (local-set-key (kbd "RET") 'newline)))
 
-(add-hook 'coffee-mode-hook 'prog-mode-hook)
 (add-hook 'coffee-mode-hook 'esk-paredit-nonlisp)
 
 ;; eshell
