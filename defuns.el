@@ -4,22 +4,6 @@
    'default
    "-apple-DejaVu_Sans_Mono-medium-normal-normal-*-20-*-*-*-m-0-iso10646-"))
 
-(defun restore-frame ()
-  (interactive)
-  (set-frame-size (selected-frame)
-                  (cdr (assoc 'width default-frame-alist))
-                  (cdr (assoc 'height default-frame-alist)))
-  (set-frame-position (selected-frame)
-                      (cdr (assoc 'left default-frame-alist))
-                      (cdr (assoc 'top default-frame-alist))))
-
-(defun maximize-frame ()
-  (interactive)
-  (set-frame-size (selected-frame)
-                  (display-pixel-width)
-                  (display-pixel-height))
-  (set-frame-position (selected-frame) 0 0))
-
 (defun close-buffer ()
   (interactive)
   (kill-buffer (current-buffer)))
