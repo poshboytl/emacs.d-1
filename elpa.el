@@ -15,7 +15,6 @@
                   'peepopen
                   'rhtml
                   'ruby-mode
-                  'sr-speedbar
                   'starter-kit
                   'starter-kit-bindings
                   'starter-kit-lisp

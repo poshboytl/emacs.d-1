@@ -1,9 +1,6 @@
 ;; buffer menu
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 
-;; speedbar
-(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
-
 ;; window
 (global-set-key (kbd "s-w") 'close-buffer)
 (global-set-key (kbd "s-k") 'kill-this-buffer)
