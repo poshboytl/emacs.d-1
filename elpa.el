@@ -7,7 +7,6 @@
                   'color-theme-twilight
                   'erlang
                   'full-ack
-                  'go-mode
                   'haskell-mode
                   'inf-ruby
                   'magit
