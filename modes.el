@@ -5,6 +5,9 @@
 (add-hook 'prog-mode-hook 'esk-cleanup-on-save)
 (add-hook 'prog-mode-hook 'esk-ident-on-return)
 
+;; ido
+(setq ido-use-filename-at-point nil)
+
 ;; TextMate mode
 (when (functionp 'textmate-mode)
   (textmate-mode 1))

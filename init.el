@@ -12,7 +12,6 @@
 (require 'global)
 (require 'defuns)
 (require 'bindings)
-(require 'buffers)
 (require 'modes)
 (require 'theme)
 
