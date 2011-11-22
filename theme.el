@@ -4,7 +4,7 @@
   ;; window
   (setq default-frame-alist
         '((left . 22) (top . 44)
-          (width . 80) (height . 50)))
+          (width . 120) (height . 55)))
 
   ;; font
   (setq mac-allow-anti-aliasing t)
