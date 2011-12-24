@@ -25,9 +25,4 @@
 (defun esk-ident-on-return ()
   (local-set-key (kbd "RET") 'newline-and-indent))
 
-(defun esk-paredit-nonlisp ()
-  (set (make-local-variable 'paredit-space-for-delimiter-predicates)
-       '((lambda (endp delimiter) nil)))
-  (paredit-mode 1))
-
 (provide 'defuns)
