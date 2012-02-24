@@ -29,6 +29,8 @@
 
 (add-hook 'css-mode-hook 'esk-paredit-nonlisp)
 
+(setq scss-compile-at-save nil)
+
 ;; Diff
 (add-hook 'diff-mode-hook 'turn-on-auto-fill)
 (add-hook 'diff-mode-hook '(lambda ()
