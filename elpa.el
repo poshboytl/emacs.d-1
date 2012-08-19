@@ -16,7 +16,6 @@
                    color-theme-twilight
                    erlang
                    full-ack
-                   haskell-mode
                    inf-ruby
                    magit
                    mustache-mode
