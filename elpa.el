@@ -14,7 +14,6 @@
                    color-theme
                    color-theme-solarized
                    color-theme-twilight
-                   erlang
                    full-ack
                    inf-ruby
                    magit
