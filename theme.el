@@ -18,7 +18,7 @@
 (when (getenv "BACKGROUND")
   (setq frame-background-mode (intern (getenv "BACKGROUND"))))
 
-(when (and (functionp 'color-theme-install) (>= (display-color-cells) 256))
+(when (and (functionp 'color-theme-solarized-dark) (>= (display-color-cells) 256))
   (if (string-equal (getenv "BACKGROUND") "dark")
       (color-theme-solarized-dark)
     (color-theme-solarized-light)))
