@@ -18,8 +18,8 @@
                    inf-ruby
                    magit
                    mustache-mode
-                   peepopen
                    rhtml
+                   rinari
                    ruby-mode
                    starter-kit
                    starter-kit-bindings
